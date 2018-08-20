@@ -1,12 +1,24 @@
+@import '../assets/styles/shared.scss';
+
+.root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 15px 0;
+}
+
 * {
   margin: 0px;
   padding: 0px;
 }
 
-.App {
+.app {
   text-align: center;
+  width: $app-width;
 }
 
-.App-intro {
+.app-intro {
   font-size: large;
 }

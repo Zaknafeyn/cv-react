@@ -1,0 +1,31 @@
+@import '../../../assets/styles/shared.scss';
+
+@mixin text($size) {
+  font-family: $font-family-common;
+  font-size: $size;
+}
+
+.header-1 {
+  @include text($text-giant);
+  display: inline-block;
+}
+
+.header-2 {
+  @include text($text-huge);
+  display: inline-block;
+}
+
+.header-3 {
+  @include text($text-big);
+  display: inline-block;
+}
+
+.title {
+  @include text($text-big);
+  font-weight: 500;
+}
+
+.body-1 {
+  font-family: $font-family-common;
+  font-size: $text-small;
+}
