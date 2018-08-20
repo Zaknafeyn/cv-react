@@ -16,6 +16,7 @@ export const Text = ({ children, type = 'body-1', className = '' }) => {
       return <h3 className={getElementClassNames(className, type)}>{children}</h3>
     case 'title':
     case 'body-1':
+    case 'body-2':
     default:
       return <span className={getElementClassNames(className, type)}>{children}</span>
   }
@@ -24,5 +25,5 @@ export const Text = ({ children, type = 'body-1', className = '' }) => {
 Text.PropTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
-  type: PropTypes.oneOf(['header-1', 'body-1']),
+  type: PropTypes.oneOf(['header-1', 'header-2', 'header-3', 'title', 'body-1', 'body-2']),
 }

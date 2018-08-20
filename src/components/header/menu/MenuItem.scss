@@ -1,0 +1,30 @@
+@import '../../../assets/styles/shared.scss';
+
+.menu-item-container {
+  background: $pickled-bluewood-accent;
+  width: 100px;
+  height: 30px;
+  line-height: 28px;
+
+  &.first {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  &.last {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .selected .link-text {
+    text-decoration: underline;
+  }
+
+  .link-text {
+    color: $pure-white-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

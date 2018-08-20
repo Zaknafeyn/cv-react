@@ -1,6 +1,6 @@
 import React from 'react'
-import { Text } from '../common/text/Text'
-//import logo from '../../logo.svg'
+import { Text } from 'components/common/text/Text'
+import { MenuItem } from 'components/header/menu/MenuItem'
 
 import './Header.css'
 
@@ -13,9 +13,19 @@ export const Header = () => (
     </div>
     <div>
       <Text type="title" className="header-title">
-        Software Developer
+        Title
       </Text>
     </div>
-    {/*<img src={logo} className="logo" alt="logo" />*/}
+    <div className="navigation-bar">
+      <MenuItem to="/" itemOrder="first">
+        About
+      </MenuItem>
+      <MenuItem to="/skills">Skills</MenuItem>
+      <MenuItem to="/experience">Experience</MenuItem>
+      <MenuItem to="/education">Education</MenuItem>
+      <MenuItem to="/contact" itemOrder="last">
+        Contact
+      </MenuItem>
+    </div>
   </header>
 )
