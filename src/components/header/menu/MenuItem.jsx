@@ -16,8 +16,8 @@ export const MenuItem = ({ children, itemOrder, to, className, activeClassName =
   </div>
 )
 
-MenuItem.PropTypes = {
-  itemOrder: PropTypes.oneOf(['first', 'regular', 'last']).isRequired,
+MenuItem.propTypes = {
+  itemOrder: PropTypes.oneOf(['first', 'regular', 'last']),
   to: PropTypes.string.isRequired,
   children: PropTypes.any,
   className: PropTypes.string,

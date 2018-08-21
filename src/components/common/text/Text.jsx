@@ -22,7 +22,7 @@ export const Text = ({ children, type = 'body-1', className = '' }) => {
   }
 }
 
-Text.PropTypes = {
+Text.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
   type: PropTypes.oneOf(['header-1', 'header-2', 'header-3', 'title', 'body-1', 'body-2']),
