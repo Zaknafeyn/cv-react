@@ -6,7 +6,7 @@ import { Text } from 'components/common/text/Text'
 
 import './MenuItem.css'
 
-export const MenuItem = ({ children, itemOrder, to, className, activeClassName /*= 'selected'*/ }) => (
+export const MenuItem = ({ children, itemOrder, to, className, activeClassName = 'selected' }) => (
   <div className={classNames('menu-item-container', itemOrder, className)}>
     <NavLink to={to} activeClassName={activeClassName}>
       <Text type="body-2" className="link-text">

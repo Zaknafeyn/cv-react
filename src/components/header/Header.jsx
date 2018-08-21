@@ -17,7 +17,7 @@ export const Header = () => (
       </Text>
     </div>
     <div className="navigation-bar">
-      <MenuItem to="/" itemOrder="first">
+      <MenuItem to="/about" itemOrder="first">
         About
       </MenuItem>
       <MenuItem to="/skills">Skills</MenuItem>
